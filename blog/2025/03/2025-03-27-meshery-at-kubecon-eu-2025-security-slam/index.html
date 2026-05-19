@@ -560,7 +560,7 @@
 
 <h3 class="highlighted-text">Earn your Security Sentinel Badge!</h3>
 
-<p><img src="https://badges.layer5.io/assets/badges/security-sentinel/security-sentinel.png" width="50%" align="right" /></p>
+<p><img src="https://badges.layer5.io/assets/badges/security-sentinel/security-sentinel.png" width="50%" align="right" alt="Security Sentinel" /></p>
 
 <p>As a special recognition for your contributions, participants in Meshery’s Security Slam at KubeCon EU 2025 will receive the coveted Security Sentinel badge! This badge will be awarded to anyone who creates, completes, or works on an issue listed on the project board. It’s a great way to showcase your commitment to security and your involvement in the Meshery community.</p>
 
@@ -1021,13 +1021,13 @@
 	function setMode() {
 		document.body.classList.toggle("dark-mode")
 		
-		let layer5Logos = document.querySelectorAll("#layer5-logo");
+		let l5Logos = document.querySelectorAll("#l5-logo");
 		let allLogos = document.querySelectorAll("#logo-dark-light");
 		if (document.body.classList.contains("dark-mode")) {
-			layer5Logos.forEach(e => e.src = '../assets/images/company-logo/layer5-dark-mode-logo.svg')
+			l5Logos.forEach(e => e.src = '../assets/images/company-logo/dark-mode-logo.svg')
 			allLogos.forEach(e => e.src = e.dataset.logoForDark)
 		} else {
-			layer5Logos.forEach(e => e.src = '../assets/images/company-logo/layer5-no-trim.svg')
+			l5Logos.forEach(e => e.src = '../assets/images/company-logo/no-trim.svg')
 			allLogos.forEach(e => e.src = e.dataset.logoForLight)
 		}
 		if (document.body.classList.contains("dark-mode")) {

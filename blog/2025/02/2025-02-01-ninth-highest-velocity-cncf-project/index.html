@@ -534,7 +534,7 @@
 
 <p>This sustained growth underscores the project’s vitality and increasing relevance in the cloud-native ecosystem.</p>
 
-<p><img src="/assets/images/posts/2025/ninth-highest-velocity-cncf-project/maintainers-and-contributors.png" style="width:100%; max-width:750px;" /></p>
+<p><img src="/assets/images/posts/2025/ninth-highest-velocity-cncf-project/maintainers-and-contributors.png" style="width:100%; max-width:750px;" alt="Maintainers And Contributors" /></p>
 
 <h3 id="what-drives-mesherys-velocity">What Drives Meshery’s Velocity?</h3>
 
@@ -1027,13 +1027,13 @@
 	function setMode() {
 		document.body.classList.toggle("dark-mode")
 		
-		let layer5Logos = document.querySelectorAll("#layer5-logo");
+		let l5Logos = document.querySelectorAll("#l5-logo");
 		let allLogos = document.querySelectorAll("#logo-dark-light");
 		if (document.body.classList.contains("dark-mode")) {
-			layer5Logos.forEach(e => e.src = '../assets/images/company-logo/layer5-dark-mode-logo.svg')
+			l5Logos.forEach(e => e.src = '../assets/images/company-logo/dark-mode-logo.svg')
 			allLogos.forEach(e => e.src = e.dataset.logoForDark)
 		} else {
-			layer5Logos.forEach(e => e.src = '../assets/images/company-logo/layer5-no-trim.svg')
+			l5Logos.forEach(e => e.src = '../assets/images/company-logo/no-trim.svg')
 			allLogos.forEach(e => e.src = e.dataset.logoForLight)
 		}
 		if (document.body.classList.contains("dark-mode")) {
